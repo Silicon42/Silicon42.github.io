@@ -36,6 +36,8 @@ jobs:
         with:
           node-version: '>=18.0'
           cache: yarn
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
       - name: Build Pages
         run: yarn build
       - name: Setup Pages
