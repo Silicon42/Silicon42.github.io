@@ -1,0 +1,19 @@
+facebook:
+  label: Facebook
+  permalink: /facebook
+  description: Facebook tag description
+
+hello:
+  label: Hello
+  permalink: /hello
+  description: first post / introductions
+
+docusaurus:
+  label: Docusaurus
+  permalink: /docusaurus
+  description: Docusaurus tag description
+
+just_chatting:
+  label: Just chatting
+  permalink: /just_chatting
+  description: Assorted musings not programming, engineering, or math related
