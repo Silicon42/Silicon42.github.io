@@ -1,8 +1,3 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
-
 hello:
   label: Hello
   permalink: /hello
@@ -17,3 +12,23 @@ just_chatting:
   label: Just chatting
   permalink: /just_chatting
   description: Assorted musings not programming, engineering, or math related
+
+Math:
+  label: Math
+  permalink: /Math
+  description: Broadly math related topics
+
+Linear-Algebra:
+  label: Linear Algebra
+  permalink: /Linear-Algebra
+  description: Linear Algebra related topics, such as matrices and systems of equations
+
+Programming:
+  label: Programming
+  permalink: /Programming
+  description: Broadly computer programming related topics
+
+CPU-Architecture:
+  label: CPU Architecture
+  permalink: /CPU-Architecture
+  description: How computers work under the hood and how to optimize for that
