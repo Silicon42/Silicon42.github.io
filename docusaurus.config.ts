@@ -6,8 +6,8 @@ import rehypeKatex from 'rehype-katex';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Curtis\s Blog',
+  tagline: 'Programming is cool',
   favicon: 'img/Si42.ico',
 
   // Set the production url of your site here
@@ -77,24 +77,24 @@ const config: Config = {
     // Replace with your project's social card
     //image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Curtis\'s Blog',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Silicon 42 Logo',
+        src: 'img/Si42.ico',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Projects',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
-        {
+/*        {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
           position: 'right',
-        },
+        },*/
       ],
     },
     footer: {
@@ -108,7 +108,7 @@ const config: Config = {
               to: '/docs/intro',
             },
           ],
-        },*/
+        },
         {
           title: 'Community',
           items: [
@@ -125,7 +125,7 @@ const config: Config = {
               href: 'https://x.com/docusaurus',
             },
           ],
-        },
+        },*/
         {
           title: 'More',
           items: [
@@ -135,12 +135,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/Silicon42',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Curtis Stofer, Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
