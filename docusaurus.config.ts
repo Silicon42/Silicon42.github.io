@@ -6,7 +6,7 @@ import rehypeKatex from 'rehype-katex';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Curtis\s Blog',
+  title: 'Curtis\'s Blog',
   tagline: 'Programming is cool',
   favicon: 'img/Si42.ico',
 

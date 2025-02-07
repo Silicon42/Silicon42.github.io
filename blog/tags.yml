@@ -28,6 +28,11 @@ Programming:
   permalink: /Programming
   description: Broadly computer programming related topics
 
+Optimization:
+  label: Optimization
+  permalink: /Optimization
+  description: I am Speed.
+
 CPU-Architecture:
   label: CPU Architecture
   permalink: /CPU-Architecture
