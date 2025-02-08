@@ -92,10 +92,10 @@ $$
 The individual entries of $\bm{D}$ and $\bm{L}$ can be calculated according to 
 the following recurrence relation
 $$
-\bm{D_i}=\bm{A_{ii}}-\sum_{k=1}^{i-1}\bm{L_{ik}D_k L_{ki}}
+\bm{D_i}=\bm{A_{ii}}-\sum_{k=1}^{j-1}\bm{L_{ik}D_k L_{ki}}
 $$
 $$
-\bm{L_{ij}}=\frac{\bm{A_{ij}}-\sum\limits_{k=1}^{i-1}\bm{L_{ik}D_k L_{kj}}}{\bm{D_i}}
+\bm{L_{ij}}=\frac{\bm{A_{ij}}-\sum\limits_{k=1}^{j-1}\bm{L_{ik}D_k L_{kj}}}{\bm{D_i}}
 $$
 
 ## Math Simplifications
@@ -108,7 +108,7 @@ a much larger matrix, but we don't care about that for this, we can instead
 rewrite it using an intermediate matrix $\bm{S}$ to streamline the computations 
 to not have completely separate logic for nearly identical formulas
 $$
-\bm{S_{ij}} = \bm{A_{ij}}-\sum_{k=1}^{i-1}\bm{L_{ik}S_{kj}}
+\bm{S_{ij}} = \bm{A_{ij}}-\sum_{k=1}^{j-1}\bm{L_{ik}S_{kj}}
 $$
 $$
 \bm{D_i} = \bm{S_{ii}}

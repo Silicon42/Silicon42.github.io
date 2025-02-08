@@ -100,16 +100,20 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-/*        {
-          title: 'Docs',
+        {
+          title: 'Site Components',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Docusaurus',
+              href: 'https://docusaurus.io/',
             },
+			{
+				label: 'Giscus',
+				href: 'https://giscus.app/',
+			}
           ],
         },
-        {
+/*        {
           title: 'Community',
           items: [
             {
