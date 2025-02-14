@@ -4,13 +4,15 @@ title: Inverting Matrices In-Place
 authors: [Silicon42]
 tags: [Math, Linear-Algebra, Programming, Optimization, CPU-Architecture]
 ---
+**EDITED: 2025-02-12, moved related code from gist to full repo + fixed some notation errors**
 
 Over the last couple days I've been working out how to solve overdetermined 
 systems of relatively short linear equations as part of a program that needs to 
 fit conics, specifically ellipses. <!-- truncate -->
 
 Code for the following post can be found in 
-[this Gist](https://gist.github.com/Silicon42/45a59f04e767561b1c8bcfabe6cab48c).
+[~~this Gist~~](https://gist.github.com/Silicon42/45a59f04e767561b1c8bcfabe6cab48c)
+EDIT:[this GitHub repo](https://github.com/Silicon42/Cholesky_decomp_matrix_inversion).
 As a side note, I also learned that GitHub doesn't track Gist commits in their
 commit graph because that's where I've been putting the code for this 
 particular sub-project. This is despite not mentioning it in their "why might 
@@ -74,8 +76,8 @@ matrix, we can break it down into the form
 $$
 \bm{A}=\bm{LDL}^T
 $$
-where $\bm{D}$ is a diagonal matrix with only values on its diagonal with all 
-else being $0$s, and $\bm{L}$ is a lower unit triangular matrix, meaning the 
+where $\bm{D}$ is a diagonal matrix, meaning only values on its diagonal with 
+all else being $0$s, and $\bm{L}$ is a lower unit triangular matrix, meaning the 
 lower-left triangle has values, the upper-right is filled with $0$s, and the 
 diagonal is filled with $1$s.
 
@@ -224,7 +226,9 @@ a bit more performance with vector processing but I'm not sure the increased
 space requirements would warrant that on such a small matrix size. If people ask 
 for benchmarks of this I'd be willing to try and set some up but for now I'm 
 good with this being based solely on theory. Once again the code is available in 
-[this Gist](https://gist.github.com/Silicon42/45a59f04e767561b1c8bcfabe6cab48c).
+[~~this Gist~~](https://gist.github.com/Silicon42/45a59f04e767561b1c8bcfabe6cab48c)
+EDIT:[this GitHub repo](https://github.com/Silicon42/Cholesky_decomp_matrix_inversion).
 
-I'll edit this article soon to provide a more accessible an at-a-glance version 
-without such large comment blocks.
+~~I'll edit this article soon to provide a more accessible an at-a-glance version 
+without such large comment blocks.~~ Code and diagrams are available in the next 
+post.
